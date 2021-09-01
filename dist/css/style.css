@@ -1,3 +1,126 @@
-* {
-  outline: 1px solid red;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper__inner {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  max-height: 810px;
+  background-image: url("/src/images/pattern-background-desktop.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 410px;
+  height: 630px;
+}
+.card__header {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-image: url("/src/images/illustration-hero.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card__body {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 0 40px 40px 40px;
+  background-color: white;
+}
+.card__summary, .card__price-plan, .card__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__summary {
+  width: 100%;
+}
+.card__price-plan {
+  width: 100%;
+  background-color: #f6f7fe;
+  padding: 15px;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card__price-plan .test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__cta {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.card__cta--proceed {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #382ae1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  padding: 10px 0;
 }
